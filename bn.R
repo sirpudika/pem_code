@@ -4,8 +4,10 @@
 
 library(bnlearn)
 library(Rgraphviz)
+library(gRain)
+# CANCEL
 
 nodes <- c("animal welfare", "environmental impact")
 
 network <- empty.graph(nodes)
-graphviz.plot(network, layout = "dot")
+graphviz.chart(network, layout = "barprob")
